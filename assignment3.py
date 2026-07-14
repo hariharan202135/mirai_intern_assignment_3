@@ -117,6 +117,7 @@ User Question:
         with st.spinner("Thinking..."):
 
             try:
+            # Using Gemini 3.5 Flash because the free-tier quota for Gemini 2.5 Flash was exhausted.
 
                 response = client.models.generate_content(
                     model="gemini-3.5-flash",
